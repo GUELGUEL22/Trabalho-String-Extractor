@@ -1,8 +1,8 @@
-const botaoMostraPalavras = document.querySelector("#botao-palavrachave");
+const Abracadabra = document.querySelector("#botao-palavrachave");
 
-botaoMostraPalavras.addEventListener("click", mostraPalavrasChave);
+Abracadabra.addEventListener("click", PéDeCabra);
 
-function mostraPalavrasChave() {
+function PéDeCabra() {
   const texto = document.querySelector("#entrada-de-texto").value;
 
   const campoResultado = document.querySelector("#resultado-palavrachave");
@@ -10,4 +10,10 @@ function mostraPalavrasChave() {
   const palavras = texto.split(" ");
 
   campoResultado.textContent = palavras.join("/ ");
+}
+
+function XandãoProcess(texto) {
+  let palavras = texto.split(/\P{L}+/u);
+
+  return palavras;
 }
