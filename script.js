@@ -7,9 +7,9 @@ function PéDeCabra() {
 
   const campoResultado = document.querySelector("#resultado-palavrachave");
 
-  const palavras = texto.split(" ");
+  const words = XandãoProcess(texto)
 
-  campoResultado.textContent = palavras.join("/ ");
+  campoResultado.textContent = words.join("/ ");
 }
 
 function XandãoProcess(texto) {
